@@ -1,0 +1,153 @@
+<div class="dashboard-container">
+  <section class="container">
+      <div class="section-title">
+          <h2>Tableau de bord</h2>
+          <p>Tableau de bord</p>
+          <div class="logout-button float-right" *ngIf="isLoggedIn">
+            <button class="btn btn-success" (click)="logout()">Logout</button>
+          </div>
+      </div>
+      <div class="dashbord-body">
+        <div class="personal-information">
+          <h5 class="text-primary">Your Information</h5>
+          <p>
+            <strong>Username:</strong> {{info.username}}<br/>
+            <strong>Roles:</strong> {{info.authorities}}<br />
+            <strong>Token:</strong> {{info.token}}.
+          </p>
+        </div>
+        <div class="icon-box-list">
+          <div class="icon-box --green">
+            <i class="ri-database-2-line"></i>
+            <p>Nombre de demandes</p>
+            <span>100</span>
+          </div>
+          <div class="icon-box --blue">
+            <i class="ri-file-list-3-line"></i>
+            <p>Nombre d'actualités</p>
+            <span>30</span>
+          </div>
+          <div class="icon-box --yellow">
+            <i class="ri-calendar-todo-line"></i>
+            <p>Nombre des événements</p>
+            <span>13</span>
+          </div>
+          <div class="icon-box --red">
+            <i class="ri-medal-line"></i>
+            <p>Nombre des membres</p>
+            <span>8</span>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+
+
+
+<!-- 
+<div class="logout-button" *ngIf="isLoggedIn"> 
+  <button class="btn btn-success" (click)="logout()">Logout</button>
+</div>
+<div>
+  <h5 class="text-primary">Your Information</h5>
+  <p >
+    <strong>Username:</strong> {{info.username}}<br/>
+    <strong>Roles:</strong> {{info.authorities}}<br />
+    <strong>Token:</strong> {{info.token}}.
+  </p>
+</div>
+<div class="container row">
+  <div class="col-md-12">
+    <h1>Upload Image</h1>
+  </div>
+</div>
+<div class="container row">
+  <div class="col-md-6">
+    <input type="file" (change)="onFileChanged($event)">
+  </div>
+  <div class="col-md-6">
+    <input type="button" (click)="onUpload()" value="upload">
+  </div>
+</div>
+<hr />
+<div class="container row">
+  <div class="col-md-12">
+    <div *ngIf=message>{{message}}</div>
+  </div>
+</div>
+<div class="container row">
+  <div class="col-md-6">
+    <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"
+           name="name" />
+  </div>
+  <div class="col-md-6">
+    <input type="button" (click)="getImage()" value="Get Image">
+  </div>
+</div>
+<div class="container row">
+  <div class="col-md-12">
+    <div *ngIf=retrievedImage>
+      <img [src]="retrievedImage">
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="col-3">-->
+<!--  <div class="container row">-->
+<!--    <div class="col-md-12">-->
+<!--      <h1>Upload Image</h1>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="container row">-->
+<!--    <div class="col-md-6">-->
+<!--      <input type="file" (change)="onFileChanged($event)" accept="image/png, image/jpeg" >-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <input class="form-control" type="text" placeholder="titre" [(ngModel)]="form.title">-->
+<!--  <input class="form-control" type="text" placeholder="date" [(ngModel)]="form.date">-->
+<!--  <input class="form-control" type="text" placeholder="contenu" [(ngModel)]="form.text">-->
+<!--  <div class="col-md-6">-->
+<!--    <input type="button" (click)="onUpload()" value="upload">-->
+<!--  </div>-->
+<!--  <hr />-->
+<!--  <div class="container row">-->
+<!--    <div class="col-md-12">-->
+<!--      <div *ngIf=message>{{message}}</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="container row">-->
+<!--    <div class="col-md-6">-->
+<!--      <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"-->
+<!--             name="name" />-->
+<!--    </div>-->
+<!--    <div class="col-md-6">-->
+<!--      <input type="button" (click)="getImage()" value="Get Image">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="container row">-->
+<!--    <div class="col-md-12">-->
+<!--      <div *ngIf=retrievedImage>-->
+<!--        <img [src]="retrievedImage">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+<!--</div>-->
+

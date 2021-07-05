@@ -1,0 +1,79 @@
+<div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>للتمتع بخدماتنا</h2>
+      <p>تقدم جمعية سنابل الخير مجموعة من الخدمات اجتماعية وتنموية وتعليمية وصحية متنوعة متميزة التي يقدمها المتطوعين</p>
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= last news Section ======= -->
+  <section id="lastnews" class="courses">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title" style="text-align: right">
+          <h2>   خدماتنا العمومية</h2>
+          <p>خدماتنا العمومية</p>
+        </div>
+
+        <div class="row services-list" data-aos="zoom-in" data-aos-delay="100" dir="rtl" style="text-align: right">
+
+            <div *ngFor="let service of servicesPublic; let i = index " class="services-list_item col-md-12 d-flex align-items-stretch my-4">
+                <div class="services-list_item_last_name">
+                    <span>الاسم</span>
+                    <p>{{service.firstName}}</p>
+                </div>
+                <div class="services-list_item_first_name">
+                    <span>اللقب</span>
+                    <p>{{service.lastName}} </p>
+                </div>
+                <div class="services-list_item_phone">
+                    <span>الهاتف</span>
+                    <p>{{service.phone}}</p>
+                </div>
+                <div class="services-list_item_email">
+                    <span>الايميل</span>
+                    <p>{{service.email}}</p>
+                </div>
+                <div class="services-list_item_job_type">
+                    <span>نوعية الخدمة</span>
+                    <p>{{service.typeService}}</p>
+                </div>
+              </div> <!-- End Course Item-->
+
+
+
+        </div>
+<br>
+      <div class="section-title" style="text-align: right">
+        <h2>   خدماتنا الخاصة</h2>
+        <p>خدماتنا الخاصة</p>
+      </div>
+      <app-login *ngIf="!x"></app-login>
+      <div  class="form-group col-3 center-block">
+        <button (click)="getX()" *ngIf="!x"  class="btn btn-success btn-lg btn-block">انقر هنا لعرض الخدمات الخاصة</button>
+      </div>
+      <div *ngIf="x" class="row services-list" data-aos="zoom-in" data-aos-delay="100" dir="rtl" style="text-align: right">
+
+        <div *ngFor="let service of servicesPrivate; let i = index " class="services-list_item col-md-12 d-flex align-items-stretch my-4">
+          <div class="services-list_item_last_name">
+            <span>الاسم</span>
+            <p>{{service.firstName}}</p>
+          </div>
+          <div class="services-list_item_first_name">
+            <span>اللقب</span>
+            <p>{{service.lastName}} </p>
+          </div>
+          <div class="services-list_item_phone">
+            <span>الهاتف</span>
+            <p>{{service.phone}}</p>
+          </div>
+          <div class="services-list_item_email">
+            <span>الايميل</span>
+            <p>{{service.email}}</p>
+          </div>
+          <div class="services-list_item_job_type">
+            <span>نوعية الخدمة</span>
+            <p>{{service.typeService}}</p>
+          </div>
+        </div> <!-- End Course Item-->
+      </div>
+    </div>
+</section><!-- End last news Section -->

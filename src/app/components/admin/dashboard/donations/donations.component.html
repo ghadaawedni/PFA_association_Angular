@@ -1,0 +1,39 @@
+<div class="dashboard-container">
+    <section class="container">
+        <div class="section-title">
+            <h2>Donations</h2>
+            <p>Liste des donations</p>
+        </div>
+        <div class="dashbord-body">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col-1">#</th>
+                    <th scope="col-3">Nom</th>
+                    <th scope="col-3">prenom</th>
+                    <th scope="col-4">email</th>
+                    <th scope="col-1">adresse</th>
+                    <th scope="col-1">somme</th>
+                    <th scope="col-1">telephone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let don of donations; let i=index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{don.firstName}}</td>
+                    <td>{{don.LastName}}</td>
+                    <td>{{don.email}}</td>
+                    <td>{{don.address}}</td>
+                    <td>{{don.donation}}</td>
+                    <td>{{don.phone}}</td>
+                    <td>
+                        <button (click)="OnDelete(don)" type="button" class="btn btn-danger btn-sm mr-2"><i class="ri-delete-bin-2-fill"></i></button>
+                        <button type="button" class="btn btn-warning btn-sm"><i class="ri-edit-2-fill"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+</div>
+

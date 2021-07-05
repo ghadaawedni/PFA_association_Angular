@@ -1,0 +1,74 @@
+<section id="events" class="events">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title" style="text-align: right">
+      <h2> التظاهرات القادمة</h2>
+      <p> التظاهرات القادمة</p>
+    </div>
+    <div class="row">
+
+
+      <div *ngFor=" let ev of events" class="col-md-6 d-flex align-items-stretch">
+        <div class="card">
+          <div class="card-img">
+            <img src={{ev.url}} alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ev.title}} </h5>
+            <p class="font-italic text-center">{{ev.date}}</p>
+            <p class="card-text">{{ev.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+<!--      <div class="col-md-6 d-flex align-items-stretch">-->
+<!--        <div class="card">-->
+<!--          <div class="card-img">-->
+<!--            <img src="assets/img/events-2.jpg" alt="...">-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">2 حدث قادم</h5>-->
+<!--            <p class="font-italic text-center">10 أفريل 2021 على الساعة الرابعة مساء</p>-->
+<!--            <p class="card-text">تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان جلستها العامة الانتخابية ستعقد-->
+<!--              يوم 10 أفريل 2021 على الساعة الرابعة مساء…-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+<!--      <div class="col-md-6 d-flex align-items-stretch">-->
+<!--        <div class="card">-->
+<!--          <div class="card-img">-->
+<!--            <img src="assets/img/events-2.jpg" alt="...">-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">3 حدث قادم</h5>-->
+<!--            <p class="font-italic text-center">10 أفريل 2021 على الساعة الرابعة مساء</p>-->
+<!--            <p class="card-text">تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان جلستها العامة الانتخابية ستعقد-->
+<!--              يوم 10 أفريل 2021 على الساعة الرابعة مساء…-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+<!--      <div class="col-md-6 d-flex align-items-stretch">-->
+<!--        <div class="card">-->
+<!--          <div class="card-img">-->
+<!--            <img src="assets/img/events-2.jpg" alt="...">-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">4 حدث قادم</h5>-->
+<!--            <p class="font-italic text-center">10 أفريل 2021 على الساعة الرابعة مساء</p>-->
+<!--            <p class="card-text">تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان جلستها العامة الانتخابية ستعقد-->
+<!--              يوم 10 أفريل 2021 على الساعة الرابعة مساء…-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+    </div>
+  </div>
+</section><!-- End manifestation Section -->

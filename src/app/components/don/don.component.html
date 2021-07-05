@@ -1,0 +1,56 @@
+<section id="don">
+  <div class="container" data-aos="fade-up">
+    <div class="page-wrapper bg-green p-t-100 p-b-100 font-robo">
+      <div class="wrapper">
+        <div class="card card-1">
+          <div class="card-heading">
+            <img src="assets/images/bg-head-02.jpg" class="card-thumbnail" />
+            <h2 class="title text-center">مرحبا بك في فضاء المتبرع</h2>
+          </div>
+          <div class="card-body" dir="rtl">
+            <form [formGroup]="addForm" (ngSubmit)="addDonation()">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input formControlName="firstName" class="input--style-1" type="text" placeholder="الأسم" name="name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input formControlName="LastName" class="input--style-1" type="text" placeholder="اللقب" name="name">
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <input  formControlName="phone" class="input--style-1" type="text" placeholder="رقم الهاتف" name="name">
+              </div>
+              <div class="input-group">
+                <input   formControlName="email" class="input--style-1" type="text" placeholder="البريد الإلكتروني" name="name">
+              </div>
+              <div class="input-group">
+                <input  formControlName="address" class="input--style-1" type="text" placeholder="العنوان" name="name">
+              </div>
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search mr-auto ">
+                  <select formControlName="donation" name="gender" class="input--style-1">
+                    <option value="">وصل تبرع بقيمة</option>
+                    <option value="10">10 د.ت</option>
+                    <option value="20">20 د.ت</option>
+                    <option value="30">30 د.ت</option>
+                    <option value="other">مبلغ حر</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-group">
+                <input  formControlName="SugDonation" class="input--style-1" type="text" placeholder=" مقدار التبرع المقترح" name="name">
+              </div>
+              <div class="p-t-20">
+                <button class="btn btn--radius btn--green left" type="submit"[disabled]="addForm.invalid" >إرسال</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

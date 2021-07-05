@@ -1,0 +1,144 @@
+<section id="courses" class="courses my-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title" style="text-align: right">
+      <h2> اخر الأخبار؟</h2>
+      <p> اخر الأخبار</p>
+    </div>
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="100" dir="rtl" style="text-align: right">
+
+      <div  *ngFor="let n of news; let i = index" class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">
+        <div class="course-item">
+          <img src={{n.url}} style="height:auto" class="img-fluid" alt="...">
+          <div class="course-content">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4> {{n.date}}</h4>
+              <div class="icon-box">
+                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>
+              </div>
+            </div>
+            <h3>{{n.title}}</h3>
+            <p>{{n.description}}</p>
+          </div>
+        </div>
+      </div> <!-- End Course Item-->
+
+
+<!--      <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">-->
+<!--        <div class="course-item">-->
+<!--          <img src="assets/img/preview16.jpg" class="img-fluid" alt="...">-->
+<!--          <div class="course-content">-->
+<!--            <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--              <h4>2 جانفي 2021</h4>-->
+<!--              <div class="icon-box">-->
+<!--                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <h3>خبار 2</h3>-->
+<!--            <p>اطفالنا المكفولين نرعاوهم من كل النواحي ووقت نراو فيهم الموهبة لازم ندعموهم بفضل #الكفالة_الشاملة الي-->
+<!--              تخلينا نوفرو للمكفولين زيادة على ضرورات الحياة…</p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+
+<!--      <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">-->
+<!--        <div class="course-item">-->
+<!--          <img src="assets/img/preview16.jpg" class="img-fluid" alt="...">-->
+<!--          <div class="course-content">-->
+<!--            <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--              <h4>22 جانفي 2021</h4>-->
+<!--              <div class="icon-box">-->
+<!--                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <h3>خبار 3</h3>-->
+<!--            <p>تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان الجلسة العامة السنوية قد تاجلت الى موعد لاحق على-->
+<!--              ان تتم خلال…</p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+
+<!--      <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">-->
+<!--        <div class="course-item">-->
+<!--          <img src="assets/img/preview16.jpg" class="img-fluid" alt="...">-->
+<!--          <div class="course-content">-->
+<!--            <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--              <h4>22 جانفي 2021</h4>-->
+<!--              <div class="icon-box">-->
+<!--                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <h3>خبار 4</h3>-->
+<!--            <p>تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان الجلسة العامة السنوية قد تاجلت الى موعد لاحق على-->
+<!--              ان تتم خلال…</p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+
+<!--      <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">-->
+<!--        <div class="course-item">-->
+<!--          <img src="assets/img/preview16.jpg" class="img-fluid" alt="...">-->
+<!--          <div class="course-content">-->
+<!--            <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--              <h4>22 جانفي 2021</h4>-->
+<!--              <div class="icon-box">-->
+<!--                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <h3>خبار 5</h3>-->
+<!--            <p>تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان الجلسة العامة السنوية قد تاجلت الى موعد لاحق على-->
+<!--              ان تتم خلال…</p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+
+<!--      <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-4">-->
+<!--        <div class="course-item">-->
+<!--          <img src="assets/img/preview16.jpg" class="img-fluid" alt="...">-->
+<!--          <div class="course-content">-->
+<!--            <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--              <h4>22 جانفي 2021</h4>-->
+<!--              <div class="icon-box">-->
+<!--                <i class="ri-map-pin-line" style="color: #ffbb2c;">تونس </i>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <h3>خبار 6</h3>-->
+<!--            <p>تعلم جمعية سنابل الخير للعمل الاجتماعي كافة منخرطيها ان الجلسة العامة السنوية قد تاجلت الى موعد لاحق على-->
+<!--              ان تتم خلال…</p>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div> &lt;!&ndash; End Course Item&ndash;&gt;-->
+
+    </div>
+
+  </div>
+</section><!-- End Events.ts Section -->
+
+<!-- <div class="container-fluid" dir="rtl">
+  <div class="row">
+      <div class="nav nav-pills flex-column" dir="rtl" style="text-align: right">
+        <h2 class="widget-title">تصنيفات</h2>
+        <div class="list-group">
+          <select class="form-select" aria-label="Default select example" [(ngModel)]="evName" (ngModelChange)="changed()">
+            <option *ngFor="let event of events" [ngValue]="event.text">{{event.text}}</option>
+          </select>
+        </div>
+        </div>
+    <div class="col pt-1">
+      ****old contenet
+    </div>
+  </div>
+</div> -->

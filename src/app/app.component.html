@@ -1,0 +1,11 @@
+<!-- header -->
+<app-header ></app-header>
+<div [ngClass]="{'dashboard-wrapper': !nav.visible}">
+    <app-side-bar></app-side-bar>
+    <app-nav-bar></app-nav-bar>
+</div>
+<!-- routes will be rendered here -->
+<router-outlet></router-outlet>
+
+<!-- footer -->
+<app-footer></app-footer>
